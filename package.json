@@ -1,0 +1,14 @@
+{
+  "name": "nextprompt-story-writer",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen:types": "node ./scripts/generate-types.mjs",
+    "gen:check": "npm run gen:types && tsc -p tsconfig.json --noEmit",
+    "update": "node ./scripts/update-scripts.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
