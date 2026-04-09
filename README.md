@@ -7,3 +7,9 @@
 ```bash
 npm run gen:types
 ```
+
+要将编写的故事脚本上传到服务端，请在本工作区根目录下运行：
+
+```bash
+npm run update
+```

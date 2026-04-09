@@ -10,8 +10,7 @@
     "strict": false
   },
   "include": [
-    "src/**/*.js",
-    "src/**/*.mjs",
+    "src/**/*.mts",
     "story-env.d.ts",
     "types/**/*.d.ts"
   ]

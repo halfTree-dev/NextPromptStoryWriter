@@ -1,12 +1,12 @@
-/** @typedef {import('../../types/scripts/managers/toolManager').ToolContext} ToolContext */
-/** @typedef {import('../../types/services/dataManger').AccountRecord} AccountRecord */
+import type { ToolContext } from '../../types/scripts/managers/toolManager';
+import type { AccountRecord } from '../../types/services/dataManger';
 
-level.hookManager.storyInitEvent = (/** @type {ToolContext} */ context) => {
+level.hookManager.storyInitEvent = (context: ToolContext) => {
     const level = context.level;
     const logger = context.logger;
 }
 
-level.hookManager.storyAdvanceEvent = (/** @type {ToolContext} */ context) => {
+level.hookManager.storyAdvanceEvent = (context: ToolContext) => {
     const level = context.level;
     const logger = context.logger;
     if (level.currRound === 1) {
@@ -38,8 +38,8 @@ level.hookManager.storyAdvanceEvent = (/** @type {ToolContext} */ context) => {
 }
 
 level.hookManager.playerConnectEvent = (
-    /** @type {ToolContext} */ context,
-    /** @type {AccountRecord} */ account
+    context: ToolContext,
+    account: AccountRecord
 ) => {
     const level = context.level;
     const logger = context.logger;
@@ -52,8 +52,8 @@ level.hookManager.playerConnectEvent = (
 }
 
 level.hookManager.playerDisconnectEvent = (
-    /** @type {ToolContext} */ context,
-    /** @type {AccountRecord} */ account
+    context: ToolContext,
+    account: AccountRecord
 ) => {
     const level = context.level;
     const logger = context.logger;
@@ -63,8 +63,8 @@ level.hookManager.playerDisconnectEvent = (
 
 let readyTimes = 4;
 level.hookManager.playerSetReadyEvent = (
-    /** @type {ToolContext} */ context,
-    /** @type {AccountRecord} */ account
+    context: ToolContext,
+    account: AccountRecord
 ) => {
     const level = context.level;
     const logger = context.logger;
@@ -79,8 +79,8 @@ level.hookManager.playerSetReadyEvent = (
 }
 
 level.hookManager.playerSetUnreadyEvent = (
-    /** @type {ToolContext} */ context,
-    /** @type {AccountRecord} */ account
+    context: ToolContext,
+    account: AccountRecord
 ) => {
     const level = context.level;
     const logger = context.logger;
