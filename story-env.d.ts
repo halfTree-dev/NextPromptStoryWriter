@@ -20,6 +20,10 @@ declare global {
 	var String: StringConstructor;
 	var Number: NumberConstructor;
 	var Boolean: BooleanConstructor;
+	var setTimeout: typeof globalThis.setTimeout;
+	var clearTimeout: typeof globalThis.clearTimeout;
+	var setInterval: typeof globalThis.setInterval;
+	var clearInterval: typeof globalThis.clearInterval;
 }
 
 export {};
